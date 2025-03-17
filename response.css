@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  p , H5{
+    font-size: 5px;
+    color: red;
+  }
+  .Header {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .Containerinputs {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+ 
+  
+}

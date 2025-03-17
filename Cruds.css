@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background-color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(72, 160, 108); */
+    /* background-color: rgb(72, 160, 108); */
+    /* background-color: rgb(33, 0, 45); */
+    background-color: rgb(27, 73, 91);
+    height: 60px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 2s;
+}
+.logo:hover {
+    rotate: 180deg;
+}
+.name , .Nick_Name {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+.name:hover , .Nick_Name:hover {
+    background: linear-gradient(to right ,purple ,whitesmoke);
+    -webkit-text-fill-color: transparent;
+    background-clip :unset ;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+
+/*                            Input         */
+
+.crud {
+    width: 80%;
+    margin: auto ;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 ;
+}
+
+.Price input{
+    width: 20%;
+    /* margin : 5px 0; */
+}
+#total {
+    background-color: red;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: "Total :";
+}
+.inputs {
+    width: 100% ;
+}
+input {
+    width: 100%;
+    height: 30px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: auto;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 5px 0;
+}
+
+input:focus {
+    background: #000;
+    transform: scale(1.1);
+}
+
+#Submit {
+    margin : 4px 0 0 0 ;
+}
+button {
+    width : 100% ;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #390053;
+    color: #fff;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #51025f;
+    letter-spacing: 1px;
+}
+
+
+
+
+/*                            output         */
+
+.btnsearch {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnsearch button {
+    width: 45%;
+
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th ,td {
+    padding:  5px;
+}
+
+#Delete_All {
+    margin: 10px;
+}

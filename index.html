@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="./Cruds.css">
+</head>
+<body>
+
+    <div class="Header">
+        <img src="./LOGO.jpg" class="logo"  alt=" Logo ">
+        <H5 class="name">Mostafa Ehab</H5>
+        <H5 class="Nick_Name">Healer</H5>
+    </div>
+
+    <div class="crud">
+
+        <div class="head">
+            <h2>cruds</h2>
+            <h2>Product Management system</h2>
+        </div>
+
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="Price">
+                <input onkeyup="get_total()" type="number" id="price" placeholder="price">
+                <input onkeyup="get_total()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="get_total()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="get_total()" type="number" id="discount" placeholder="discount">
+                <small onkeyup="get_total()" id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="" id="category" placeholder="category">
+            <button id="Submit" onclick="object_of_array()">Create</button>
+        </div>
+
+        <div class="outputs">
+
+            <div class="search_Block">
+                <input onkeyup="search_Data(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="Search_mood(this.id)" id="search_Title">Search By Title</button>
+                    <button onclick="Search_mood(this.id)" id="search_Category">Search By Category</button>
+                </div>
+            </div>
+
+            <div id="Delete_All" onclick="DeleteAll()">
+                <button>Delete All</button>
+            </div>
+            <!-- <button id="Delete_All"  onclick = "DeleteAll()">Delete All</button> -->
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>Total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./Cruds.js"></script>
+</body>
+</html>
